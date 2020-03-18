@@ -1,4 +1,5 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
+# Pre parcial Juan Camilo Rojas Ortiz
 ## Instrucciones de Ejecución
 
 #### Requisitos:
@@ -17,6 +18,14 @@ En el directorio `ARSW-PREPARCIAL-T2`:
 ## Despliegue Heroku
 
 El despliegue se encuentra en el siguiente [link](https://arsw-prep-t2.herokuapp.com/)
+
+El git es [link](https://github.com/Jcro15/ARSW-PREPARCIAL-T2)
+
+## Extensibilidad
+1. para extender el proyecto y usar otro tipo de implementaciones basta con construir clases que cumplan con el contrato establecido por cada una de las interfaces
+en cada capa, de esta forma se pueden tener varias formas de implementar el cache,los servicios,la coneccion http, entre otras.
+2. También se separaró la logica del cliente JS de las funciones que realizan llamados a la api , de forma que implementando otro script que tenga las mismas funciones que apiclient
+se podrian obtener nuevas formas de funcionamiento cambiando la variable api en app.js
 
 ## Preparación para el Parcial
 
