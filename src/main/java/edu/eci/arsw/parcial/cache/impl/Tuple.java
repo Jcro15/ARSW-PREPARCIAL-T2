@@ -2,6 +2,11 @@ package edu.eci.arsw.parcial.cache.impl;
 
 import java.util.Objects;
 
+/**
+ * Estructura de datos tupla
+ * @param <T1> Objeto en la primera posicion
+ * @param <T2> Objeto en la segunda posicion
+ */
 public class Tuple<T1, T2> {
 
     T1 o1;
@@ -13,14 +18,26 @@ public class Tuple<T1, T2> {
         this.o2 = o2;
     }
 
+    /**
+     *
+     * @return el primer elemento de la tupla
+     */
     public T1 getElem1() {
         return o1;
     }
 
+    /**
+     *
+     * @return el segundo elemento de la tupla
+     */
     public T2 getElem2() {
         return o2;
     }
 
+    /**
+     *
+     * @return el hashcode de la tupla
+     */
     @Override
     public int hashCode() {
         int hash = 7;
@@ -29,6 +46,11 @@ public class Tuple<T1, T2> {
         return hash;
     }
 
+    /**
+     * determina si una tupla equivale a otro objeto
+     * @param obj el objeto a comparar
+     * @return True o False si las tuplas son iguales o no
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

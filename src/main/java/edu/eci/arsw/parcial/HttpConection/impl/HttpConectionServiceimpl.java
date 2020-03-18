@@ -12,7 +12,12 @@ import java.io.IOException;
 @Service
 public class HttpConectionServiceimpl implements HttpConectionService {
 
-
+    /**
+     * Realiza una peticion http hacia rapidapi para obtener los aeropuertos solicitados
+     * @param name el nombre por el cual se desea filtrar los aeropuertos
+     * @return un String con los aeropuertos en formato JSON
+     * @throws AirportException si no encuentra aeropuertos para este nombre
+     */
     @Override
     public String doRequest(String name) throws AirportException {
         OkHttpClient client = new OkHttpClient();
@@ -32,9 +37,11 @@ public class HttpConectionServiceimpl implements HttpConectionService {
                 resp= res.body().string();
             }
         } catch (IOException e) {
-            throw new AirportException("Bad Request");
+            throw new AirportException("Not Found");
         }
-
+        if(resp.length()==2){
+            throw new AirportException("Not Found");
+        }
         return resp;
     }
 }

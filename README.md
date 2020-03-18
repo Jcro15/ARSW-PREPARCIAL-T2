@@ -1,4 +1,22 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
+## Instrucciones de Ejecución
+
+#### Requisitos:
+
+- Maven
+- Java
+
+#### Ejecución
+
+En el directorio `ARSW-PREPARCIAL-T2`:
+
+- Para compilar el proyecto: `mvn package`
+- Para ejecutar las pruebas: `mvn test`
+- Para ejecutar el proyecto: `mvn spring-boot:run`
+
+## Despliegue Heroku
+
+El despliegue se encuentra en el siguiente [link](https://arsw-prep-t2.herokuapp.com/)
 
 ## Preparación para el Parcial
 

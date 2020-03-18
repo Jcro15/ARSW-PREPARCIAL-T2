@@ -1,0 +1,9 @@
+edu.eci.arsw.parcial
+edu.eci.arsw.parcial.Exceptions
+edu.eci.arsw.parcial.HttpConection
+edu.eci.arsw.parcial.HttpConection.impl
+edu.eci.arsw.parcial.cache
+edu.eci.arsw.parcial.cache.impl
+edu.eci.arsw.parcial.controllers
+edu.eci.arsw.parcial.services
+edu.eci.arsw.parcial.services.impl

@@ -39,11 +39,13 @@ var Module = (function () {
             _table(data);
             plotMarkers(data);
         }).catch(function () {
+            alert("Bad request")
             console.log("Bad request");
         });
     }
     function plotMarkers(m)
     {
+        init();
         markers = [];
         bounds = new google.maps.LatLngBounds();
 
